@@ -93,5 +93,9 @@ node default {
   class { 'intellij':
     edition => 'community',
   }
+ 
+  file { ['/usr/local', '/usr/local/bin']:
+    ensure => directory,
+  }
 
 }
