@@ -98,4 +98,8 @@ node default {
     ensure => directory,
   }
 
+  package { 'wget':
+    ensure => latest,
+  }
+
 }
